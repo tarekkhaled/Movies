@@ -1,0 +1,36 @@
+{
+  "name": "movies_api",
+  "version": "1.0.0",
+  "description": "build api form movies",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist/src",
+    "buildServer": "babel server.js --out-file dist/server.js",
+    "restart": "rimraf dist && npm run buildServer && npm run build && npm run start",
+    "dev": "nodemon --exec npm run restart",
+    "start": "node dist/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarekkhaled/Movies.git"
+  },
+  "author": "tarek khaled <tarek820@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tarekkhaled/Movies/issues"
+  },
+  "homepage": "https://github.com/tarekkhaled/Movies",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.21.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.0",
+    "@babel/core": "^7.8.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.0",
+    "@babel/preset-env": "^7.8.0",
+    "nodemon": "^2.0.2",
+    "rimraf": "^3.0.0"
+  }
+}
