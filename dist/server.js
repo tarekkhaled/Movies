@@ -5,6 +5,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.start = void 0;
 
+const checkAPI = require('./src/utilites');
+
+const moviesRouter = require('./src/resources/movies/movies.routers');
+
 const express = require('express');
 
 const helmet = require('helmet');
@@ -19,11 +23,8 @@ app.use(express.urlencoded({
 /** some secure */
 
 app.use(helmet());
-app.use('/', (req, res, next) => {
-  res.json({
-    name: 'adel shakel'
-  });
-});
+app.use(checkAPI);
+app.use('/movies', moviesRouter);
 
 const start = () => {
   app.listen(3000, () => {
