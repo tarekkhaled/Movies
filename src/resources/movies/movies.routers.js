@@ -15,7 +15,7 @@ router.route('/')
     .post(addNewMovie) // will add the movie to the list
 
 // for route /movies/top_rated
-router.route('/top_rated')
+router.route('/topRated')
     .get(getTopRatedMovies) // will get top_rated 
 
 // for route /movies/:id
