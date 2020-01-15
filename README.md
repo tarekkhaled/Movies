@@ -1,4 +1,4 @@
-# Creative Eagles (TASK) 
+# Creative Eagles (Internship) 
 
 Movies API is express program build with babel to make API for Movies website with REST 
 and using MVC Pattern 
