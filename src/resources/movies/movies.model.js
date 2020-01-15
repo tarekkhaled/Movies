@@ -9,9 +9,6 @@ class Movie {
     getTopRatedMovies(){
         return moviesDB.filter(movie => movie.vote_average >= 8);
     }
-    getMostPopularMovies(){
-        return moviesDB.filter(movie => movie.most_popular);
-    }
     addNewMovie(movie){ 
         moviesDB.push(movie); 
     }
