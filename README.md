@@ -5,8 +5,8 @@ and using MVC Pattern
 
 
 ```api_key
-    Note // APIs should have api_key  
-    api_key = 2020 
+    Note // APIs should have apiKey  
+    apiKey = 2020 
 ```
 
 
